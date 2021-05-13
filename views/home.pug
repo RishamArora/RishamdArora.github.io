@@ -1,0 +1,44 @@
+extends base.pug 
+
+block scripts 
+    script(src="/static/index.js") 
+
+block style 
+    style
+            include ../static/style.css
+
+block content 
+    
+    section#intro  
+        div  Welcome to Dance Academy
+        div.small  Anybody Can Dance  
+    section#mission
+        h2 Our Mission   
+        div.card 
+            h3 Dance Perfection
+            div.cardbox 
+                div.cardimage 
+                    img(src="/static/img/logo2.png")
+                div.cardcontent 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, modi dolore possimus quibusdam molestias eligendi! Voluptates temporibus dolore molestiae quod!    
+        div.card 
+            h3 World's best choreographer
+            div.cardbox 
+                div.cardimage 
+                    img(src="/static/img/logo3.png")
+                div.cardcontent 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, modi dolore possimus quibusdam molestias eligendi! Voluptates temporibus dolore molestiae quod!    
+        div.card 
+            h3 Expert Teaching
+            div.cardbox 
+                div.cardimage 
+                    img(src="/static/img/logo4.png")
+                div.cardcontent 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, modi dolore possimus quibusdam molestias eligendi! Voluptates temporibus dolore molestiae quod!    
+        
+    section#sponsors   
+        h2 Our Sponsors 
+        div#sponsor
+            img(src="/static/img/adidas_PNG23.png", alt="Sponsor image",class="spimage")
+            img(src="/static/img/hushpuppies.png", alt="Sponsor image",class="spimage")
+            img(src="/static/img/thenorthface.png", alt="Sponsor image",class="spimage")  
